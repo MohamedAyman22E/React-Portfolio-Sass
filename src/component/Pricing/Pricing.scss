@@ -1,0 +1,83 @@
+@import "../../Sass/Layout/global_rules";
+.container_price.container{
+@include mediaContainer;
+    .heading{
+        h2{
+            @include heading;
+            @media (max-width:335px) {
+            font-size: 40px;        
+                    
+                }
+        }
+    }
+    .allBoxPlan{
+        @include grid(0px,0px);
+        grid-template-columns: repeat(3,1fr);
+        @media (max-width:1280px) {
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+
+            
+        }
+        @media (max-width:1005px) {
+            grid-template-columns: repeat(1,1fr);
+    
+                
+            }
+        .priceBox{
+            text-align: center;
+            background-color: $container-color;
+            box-shadow:  $box-shadow;
+            padding: 35px;
+            border-radius: 10px;
+            &:nth-child(2){
+                position: relative;
+                transform: scale(1.1);
+                @media (max-width:1280px) {
+                    transform: scale(1);
+                    }
+                &::before{
+                    contain: "Recommended";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            h2{
+                margin: 15px 0;
+                font-weight: $font-weight-600;
+                color: $title-color;
+            }
+            p{
+                margin-bottom: 15px ;
+            }
+            button{
+                @include button($container-color,$first-color)
+            }
+            .num{
+                span{
+                    color: $title-color;
+                    font-weight: $font-weight-600;
+                    font-size: 40px;
+                }
+                sup{
+                    font-weight: $font-weight-600;
+                    color: $title-color;
+
+                }
+            }
+            .title{
+                position: absolute;
+                top: 53px;
+                left: 0;
+                transform: rotate(-90deg);
+                background-color: $work-color;
+                color: $container-color;
+                padding: 5px;
+                border-bottom-left-radius: 20px;
+                border-top-left-radius: 20px;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import "../../Sass/Layout/global_rules";
+.hero_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    .info_hero {
+        img{
+            width: 80px;
+        }
+        h1{
+            font-size: $h1-font-size;
+            color: $first-color;
+            margin: 5px 0;
+        }
+    }
+    .icons{
+        display: flex;
+        margin-top: 5px;
+        .icon{
+            margin: 0 10px ;
+            &:hover svg{
+                transition: .3s;
+                color: $first-color;
+            }
+        }
+    }
+    button{
+       @include button($container-color,$first-color)
+    }
+    .shapes{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    .shape{
+        position: absolute;
+    }
+    .s1{
+       left: 2%;
+       top: 10%;
+    
+    }
+        .s2{
+            top: 45%;
+            left: 28%;
+        }
+        .s3{
+            bottom: 56%;
+            left: 5%;
+        }
+        .s4{
+            left: 2%;
+            bottom: 10%;
+        }
+        .s5{
+            top: 10%;
+            left: 44%;
+        }
+        .s6{
+            bottom: 10%;
+            left: 36%;
+        
+        }
+        .s7{
+            top: 20%;
+            right: 25%;
+        
+        }
+        .s8{
+            bottom: 20%;
+            right: 24%;
+        
+        }
+        .s9{
+            top: 10%;
+            right: 2%;
+        
+        }
+        .s10{
+            top: 45%;
+            right: 11%;
+        
+        }
+        .s11{
+            bottom: 10%;
+            right: 20%;
+        
+        }
+    }
+}

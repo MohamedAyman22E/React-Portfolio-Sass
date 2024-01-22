@@ -1,0 +1,47 @@
+@import "../../Sass/Layout/global_rules";
+.experience.container{
+@include mediaContainer;
+    .heading{
+        h2{
+@include heading;
+@media (max-width:335px) {
+    font-size: 40px;        
+            
+        }
+        }
+    }
+    .allService{
+        @include flex(30px);
+        @media (max-width:900px) {
+            flex-direction: column;
+        }
+        .bigBox{
+            padding: 20px;
+            background-color: $container-color;
+            border-radius: 20px;
+            box-shadow: $box-shadow;
+            position: relative;
+            .smallBox{
+                border-left: 2px solid $first-color;
+                padding:0 25px;
+                .box{
+                    position: relative;
+                    margin: 27px 0;
+                    .icon{
+                        position: absolute;
+                        left: -35px;
+                        color: $first-color;    
+                        background-color: $container-color;
+                        font-size: 20px;
+                    }
+                    h2{
+                        margin: 10px 0;
+                        color: $title-color;
+                        font-weight: $font-weight-600;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
+}

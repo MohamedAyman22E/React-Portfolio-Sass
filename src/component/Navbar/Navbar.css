@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+button, input, textarea, body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(258, 60%, 98%);
+  line-height: 1.7;
+  color: hsl(244, 16%, 43%);
+}
+
+h1, h2, h3 {
+  font-size: hsl(244, 24%, 26%);
+  line-height: 1.2;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  padding: 0 50px;
+  transition: 0.3s;
+  margin: 0px 0 50px 70px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  margin: 10px 0;
+  resize: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-left: 0px;
+    padding: 0 0px;
+  }
+}
+.allNavBar {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000000;
+  transition: 0.3s;
+}
+.allNavBar .navbar {
+  padding: 30px 0;
+  width: 70px;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(258, 60%, 98%);
+  height: 100vh;
+  z-index: 100000000000;
+}
+.allNavBar .navbar .navList {
+  margin: 70px 0;
+}
+.allNavBar .navbar .navList li {
+  margin: 20px 0;
+}
+.allNavBar .navbar .navList li a {
+  font-size: 20px;
+  color: hsl(244, 24%, 26%);
+  transition: 0.3s;
+}
+.allNavBar .navbar .navList li a:hover {
+  color: hsl(353, 100%, 65%);
+}
+.allNavBar .navbar .history {
+  transform: rotate(-90deg);
+  width: 90px;
+}
+.allNavBar .menu {
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  background-color: hsl(258, 60%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  cursor: pointer;
+  display: none;
+  border-radius: 2px;
+}
+.allNavBar .menu svg {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+  .activeAllNavBar {
+    left: -80px;
+  }
+  .allNavBar .menu {
+    display: flex;
+  }
+}/*# sourceMappingURL=NavBar.css.map */

@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+button, input, textarea, body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(258, 60%, 98%);
+  line-height: 1.7;
+  color: hsl(244, 16%, 43%);
+}
+
+h1, h2, h3 {
+  font-size: hsl(244, 24%, 26%);
+  line-height: 1.2;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  padding: 0 50px;
+  transition: 0.3s;
+  margin: 0px 0 50px 70px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  margin: 10px 0;
+  resize: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-left: 0px;
+    padding: 0 0px;
+  }
+}
+.experience.container {
+  margin: 100px 100px 0px 200px;
+}
+@media (max-width: 1107px) {
+  .experience.container {
+    margin: 50px 0 50px 100px;
+  }
+}
+@media (max-width: 600px) {
+  .experience.container {
+    margin: 50px 0 50px 70px;
+  }
+}
+@media (max-width: 500px) {
+  .experience.container {
+    margin: 50px 20px 0px 20px;
+  }
+}
+.experience.container .heading h2 {
+  font-size: 50px;
+  color: hsl(244, 24%, 26%);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+@media (max-width: 335px) {
+  .experience.container .heading h2 {
+    font-size: 40px;
+  }
+}
+.experience.container .allService {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  .experience.container .allService {
+    flex-direction: column;
+  }
+}
+.experience.container .allService .bigBox {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  position: relative;
+}
+.experience.container .allService .bigBox .smallBox {
+  border-left: 2px solid hsl(353, 100%, 65%);
+  padding: 0 25px;
+}
+.experience.container .allService .bigBox .smallBox .box {
+  position: relative;
+  margin: 27px 0;
+}
+.experience.container .allService .bigBox .smallBox .box .icon {
+  position: absolute;
+  left: -35px;
+  color: hsl(353, 100%, 65%);
+  background-color: #fff;
+  font-size: 20px;
+}
+.experience.container .allService .bigBox .smallBox .box h2 {
+  margin: 10px 0;
+  color: hsl(244, 24%, 26%);
+  font-weight: 600;
+  font-size: 23px;
+}/*# sourceMappingURL=Experience.css.map */

@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+button, input, textarea, body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: hsl(258, 60%, 98%);
+  line-height: 1.7;
+  color: hsl(244, 16%, 43%);
+}
+
+h1, h2, h3 {
+  font-size: hsl(244, 24%, 26%);
+  line-height: 1.2;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.container {
+  padding: 0 50px;
+  transition: 0.3s;
+  margin: 0px 0 50px 70px;
+}
+
+input, textarea {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  margin: 10px 0;
+  resize: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin-left: 0px;
+    padding: 0 0px;
+  }
+}
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.hero_container .info_hero img {
+  width: 80px;
+}
+.hero_container .info_hero h1 {
+  font-size: 2.25rem;
+  color: hsl(353, 100%, 65%);
+  margin: 5px 0;
+}
+.hero_container .icons {
+  display: flex;
+  margin-top: 5px;
+}
+.hero_container .icons .icon {
+  margin: 0 10px;
+}
+.hero_container .icons .icon:hover svg {
+  transition: 0.3s;
+  color: hsl(353, 100%, 65%);
+}
+.hero_container button {
+  padding: 8px 20px;
+  background-color: hsl(353, 100%, 65%);
+  border-radius: 20px;
+  margin-top: 10px;
+  color: #fff;
+  border: 2px solid hsl(353, 100%, 65%);
+  transition: 0.3s;
+}
+.hero_container button:hover {
+  background-color: #fff;
+  color: hsl(353, 100%, 65%);
+}
+.hero_container .shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero_container .shapes .shape {
+  position: absolute;
+}
+.hero_container .shapes .s1 {
+  left: 2%;
+  top: 10%;
+}
+.hero_container .shapes .s2 {
+  top: 45%;
+  left: 28%;
+}
+.hero_container .shapes .s3 {
+  bottom: 56%;
+  left: 5%;
+}
+.hero_container .shapes .s4 {
+  left: 2%;
+  bottom: 10%;
+}
+.hero_container .shapes .s5 {
+  top: 10%;
+  left: 44%;
+}
+.hero_container .shapes .s6 {
+  bottom: 10%;
+  left: 36%;
+}
+.hero_container .shapes .s7 {
+  top: 20%;
+  right: 25%;
+}
+.hero_container .shapes .s8 {
+  bottom: 20%;
+  right: 24%;
+}
+.hero_container .shapes .s9 {
+  top: 10%;
+  right: 2%;
+}
+.hero_container .shapes .s10 {
+  top: 45%;
+  right: 11%;
+}
+.hero_container .shapes .s11 {
+  bottom: 10%;
+  right: 20%;
+}/*# sourceMappingURL=Hero.css.map */

@@ -1,0 +1,76 @@
+@import "../../Sass/Layout/global_rules";
+.container.clients_container{
+    @include mediaContainer;
+    .heading{
+        h2{
+            @include heading;
+            margin-bottom: 100px;
+            @media (max-width:467px) {
+                font-size: 40px;
+            }
+            @media (max-width:382px) {
+                font-size: 30px;
+            }
+        }
+    }
+    .allClients{
+        max-width: 700px;
+        margin: auto;
+        .client{
+            text-align: center;
+            .img{
+                img{
+                    width: 80px;
+                }
+            }
+            h2{
+                color: $title-color;
+                font-weight: $font-weight-600;
+                margin: 10px 0;
+            }
+            h3{
+                font-weight: $font-weight-400;
+                font-size: 15px;
+            }
+            .clientBox{
+                background-color: $container-color;
+                box-shadow: $box-shadow;
+                padding: 20px 10px;
+                border-radius: 20px;
+                margin: 40px 0 ;
+                position: relative;
+                width: 95%;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    border: 20px solid;
+                    border-color: transparent  transparent $container-color transparent;
+                    top:-40px;
+                    left:50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+.swiper-pagination-horizontal{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-pagination-bullet{
+    width: .5rem !important;
+    height: .375rem !important;
+    background-color: $first-color !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullet{
+margin:  0 .2rem !important;
+}
+.swiper-pagination-bullet-active{
+    width: 1.2rem !important;
+    height: .375rem !important;
+    border-radius: .5rem !important;
+    transition: .3s;
+}

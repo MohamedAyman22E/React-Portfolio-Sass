@@ -1,0 +1,32 @@
+@import "../../Sass/Layout/global_rules";
+.serviceContainer.container{
+  @include mediaContainer;
+
+    .heading{
+        h2{
+            @include heading
+        }
+    }
+    .allService{
+        @include grid(290px,20px);
+        .box{
+            padding:30px 20px;
+            border-radius: 20px;
+            text-align: center;
+            transition: .3s;
+            &:hover{
+                transform: translateY(-20px);
+            }
+          h3{
+            margin: 10px 0;
+            font-weight: $font-weight-500;
+            font-size: 25px;
+            color: $container-color;
+          }
+          p{
+            color: $body-color;
+          }
+
+        }
+    }
+}

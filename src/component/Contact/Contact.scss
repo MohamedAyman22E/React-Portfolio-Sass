@@ -1,0 +1,68 @@
+@import "../../Sass/Layout/global_rules";
+
+.container.contact_container{
+    @include mediaContainer();
+    .heading{
+        h2{
+            @include heading();
+        @media (max-width:350px) {
+font-size: 40px;
+        }
+
+        }
+    }
+    .allContact{
+        @include flex(20px);
+        align-items: flex-start;
+        @media (max-width:1080px) {
+            flex-direction: column;
+        }
+        .info{
+            width:40%;
+               @media (max-width:1080px) {
+                width: 100%;
+
+        }
+            h2{
+                color: $title-color;
+                font-weight: $font-weight-500;
+                margin-bottom: 10px;
+            }
+        }
+        form{
+            width: 60%;
+               @media (max-width:1080px) {
+                width: 100%;
+
+        }
+            .small{
+        @include flex(10px);
+        justify-content: flex-start;
+        @media (max-width:490px) {
+            flex-direction: column;
+        }
+        input{
+            width: 100%;
+            
+        }
+    
+ 
+            }
+     
+
+        }
+    }
+}
+.end{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: $font-weight-500;
+    color: $title-color ;
+    @media (max-width:335px) {
+        font-size: 20px;
+        
+    }
+    span{
+        color: $first-color;
+    }
+}

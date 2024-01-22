@@ -1,0 +1,153 @@
+
+$first-color:hsl(353,100%,65%);
+$title-color:hsl(244,24%,26%);
+$text-color:hsl(244,16%,43%);
+$body-color:hsl(258,60%,98%);
+$work-color:#6c6ce5;
+$container-color:#fff;
+$yellow-color:rgb(255,209,92);
+$red-color:rgb(255,76,92);
+$blue-color:rgb(108,108,299);
+$first-width:90%;
+$sound-width:80%;
+$third-width:60%;
+
+// font
+$font-family: 'Rubik', sans-serif;
+$h1-font-size:2.25rem;
+$h2-font-size:1.5rem;
+$h3-font-size:1.25rem;
+$normal-font-size:1rem;
+$small-font-size:.875rem;
+$smaller-font-size:.813rem;
+// font-wight
+$font-weight-200:200;
+$font-weight-300:300;
+$font-weight-400:400;
+$font-weight-500:500;
+$font-weight-600:600;
+$font-weight-700:700;
+// box shadow
+$box-shadow:0px 5px 20px 0px rgba(69 67 96 /10%);
+*{
+    padding:0;
+    margin: 0;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+button,input,textarea,body{
+    font-family: $font-family;
+    font-size: $normal-font-size;
+}
+body{
+    background-color: $body-color;
+    line-height: 1.7;
+    color: $text-color;
+}
+h1,h2,h3{
+    font-size: $title-color;
+    line-height: 1.2;
+}
+h1{
+    font-weight: $font-weight-600;
+}
+h2{
+    font-weight: $font-weight-400;
+}
+h3{
+    font-weight: $font-weight-300;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: flex;
+}
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container{
+    padding:0 50px ;
+    transition: .3s;
+    margin: 00px 0 50px 70px;
+}
+input ,textarea{
+    width: 100%;
+    border-radius: 20px;
+    background-color: $container-color;
+    box-shadow: $box-shadow;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    margin: 10px 0;
+    resize: none;
+}
+ @mixin button($color,$backgroundColor){
+    padding: 8px 20px;
+    background-color: $backgroundColor;
+    border-radius: 20px ;
+    margin-top: 10px;
+    color: $color;
+    border: 2px solid $first-color;
+    transition: .3s;
+    &:hover{
+    background-color: $color;
+    color:  $backgroundColor;
+    }
+}
+@mixin flex($val){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap :$val
+}
+@mixin bar($width,$backgroundColorBar){
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: $width;
+    background-color: $backgroundColorBar;
+    z-index: 11;
+}
+@mixin heading(){
+    font-size: 50px;
+    color: $title-color;
+    font-weight: $font-weight-500;
+    margin-bottom: 50px
+}
+@mixin mediaContainer(){
+    margin: 100px 100px 0px 200px;
+    @media (max-width:1107px) {
+    margin: 50px 0 50px 100px;
+       }
+       @media (max-width:600px) {
+        margin: 50px 0 50px 70px;
+           }
+           @media (max-width:500px) {
+            margin: 50px 20px 00px 20px;
+               }
+}
+@mixin grid($width,$gap){
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax($width,auto));
+    margin-top: 50px;
+    gap: $gap;
+}
+@media (max-width:500px) {
+    .container{
+        margin-left: 0px;
+        padding:0 0px ;
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../Sass/Layout/global_rules";
+.container.container_post{
+    @include mediaContainer;
+    .heading{
+        h2{
+            @include heading;
+            @media (max-width:330px) {
+                font-size: 40px;
+            }
+        }
+    }
+    .allLastPost{
+       @include grid(280px,20px);
+       .post{
+        background-color: $container-color;
+        box-shadow: $box-shadow;
+        border-radius: 15px;
+        position: relative;
+        .img{
+            position: relative;
+            overflow: hidden;
+            img{
+            width: 100%;
+                transition: .3s;
+            }
+        }
+        &:hover .img img{
+            transform: scale(1.1);
+        }
+        .info{
+            padding: 15px;
+            h2{
+                color: $title-color;
+                font-size: 20px;
+                font-weight: $font-weight-600;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            span{
+                position: absolute;
+                top: 0px;
+                left: 20px;
+                background-color: $first-color;
+                color: $container-color;
+                padding: 5px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                font-size: 15px;
+                transition: .3s;
+            }
+        }
+       }
+    }
+}
